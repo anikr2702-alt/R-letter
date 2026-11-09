@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#25160f">
+<title>A Letter for Ridhi</title>
+<script>document.documentElement.classList.add('js');</script>
+<style>
+:root{color-scheme:dark;--ink:#4b3729;--paper:#e9d9b8;--faint:#c8b08d;--mono:'Courier New',monospace}
+*{box-sizing:border-box}
+html{min-height:100%;background:#21140e}
+body{margin:0;min-height:100vh;color:#e9d7bb;background:radial-gradient(ellipse at 50% 9%,#62442e 0,#38251a 42%,#20130e 100%);font-family:Georgia,'Times New Roman',serif;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.25;background:repeating-linear-gradient(92deg,transparent 0 46px,rgba(15,7,3,.2) 47px,transparent 49px,rgba(196,143,88,.08) 82px,transparent 108px),repeating-linear-gradient(0deg,transparent 0 5px,rgba(12,6,3,.12) 6px,transparent 8px);mix-blend-mode:soft-light}
+body::after{content:"";position:fixed;inset:0;pointer-events:none;opacity:.13;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.65'/%3E%3C/svg%3E");z-index:5}
+.scene{position:relative;min-height:100vh;padding:34px 20px 42px;display:flex;flex-direction:column;align-items:center;animation:arrive 1s ease both}
+.topline{width:min(100%,640px);display:flex;align-items:center;justify-content:space-between;margin-bottom:22px;color:#c9af8d;font:10px/1.4 var(--mono);letter-spacing:.22em;text-transform:uppercase}
+.topline .right{letter-spacing:.12em;color:#a48768}
+.heading{margin:0 0 20px;text-align:center;font:11px/1.5 var(--mono);letter-spacing:.35em;color:#dbc8ab;font-weight:normal}
+.heading::before,.heading::after{content:"";display:inline-block;width:30px;height:1px;background:#a48768;vertical-align:middle;margin:0 13px;opacity:.6}
+.letter{position:relative;width:min(100%,640px);padding:57px 66px 54px;color:var(--ink);background:radial-gradient(ellipse at 12% 10%,rgba(255,249,222,.68),transparent 36%),radial-gradient(ellipse at 90% 90%,rgba(143,96,48,.15),transparent 34%),linear-gradient(105deg,#e5d2ad 0%,#f0e2c4 46%,#dfc9a2 100%);border:1px solid rgba(103,66,37,.4);border-radius:2px 5px 3px 5px;box-shadow:0 26px 60px rgba(0,0,0,.48),0 4px 10px rgba(0,0,0,.3),inset 0 0 40px rgba(113,75,39,.1);isolation:isolate}
+.letter::before{content:"";position:absolute;inset:0;pointer-events:none;opacity:.19;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='p'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.63' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23p)'/%3E%3C/svg%3E");mix-blend-mode:multiply;z-index:0}
+.letter::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,transparent 49.8%,rgba(122,81,48,.055) 50%,rgba(255,255,255,.15) 50.2%,transparent 50.5%);box-shadow:inset 0 0 45px rgba(103,65,36,.09)}
+.letter-head,.letter-body,.signoff,.paper-footer{position:relative;z-index:1}
+.letter-head{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:37px;font:10px/1.2 var(--mono);letter-spacing:.18em;color:#8c7154;text-transform:uppercase}
+.letter-head .seal{font-size:18px;line-height:1;color:#9d7555;letter-spacing:0}
+.letter-body{font-size:17px;line-height:1.72;letter-spacing:.005em}
+.letter-body p{margin:0 0 13px}
+.letter-body .salutation{font-size:24px;font-style:italic;margin-bottom:24px;color:#543d2c}
+.letter-body .closing{margin-top:20px;margin-bottom:0;font-style:italic}
+.secret{position:relative}
+.js .secret:not(.ready){color:transparent}
+.strip-layer{position:absolute;inset:0;pointer-events:none;z-index:3}
+.strip{position:absolute;filter:drop-shadow(0 2px 2px rgba(66,43,27,.34));transform-origin:3% 50%;will-change:transform,opacity}
+.strip::before{content:"";position:absolute;inset:-1px 0;background:linear-gradient(173deg,rgba(255,250,230,.4),transparent 50%,rgba(126,91,57,.11)),var(--strip-color,#e8d8b8);clip-path:polygon(0 5%,2% 1%,15% 3%,24% 0,41% 3%,57% 1%,72% 4%,89% 1%,99% 3%,100% 92%,98% 99%,82% 97%,66% 100%,49% 97%,30% 100%,15% 97%,1% 100%);box-shadow:inset 0 0 7px rgba(105,68,38,.2)}
+.strip::after{content:"";position:absolute;inset:1px 0;opacity:.17;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='s'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.75' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23s)'/%3E%3C/svg%3E");mix-blend-mode:multiply}
+.strip.leaving{animation:peel .62s cubic-bezier(.2,.65,.25,1) forwards}
+.paper-footer{margin-top:36px;display:flex;align-items:center;gap:12px;color:#9c8060;font:9px/1 var(--mono);letter-spacing:.18em;text-transform:uppercase}
+.paper-footer::before{content:"";width:32px;height:1px;background:#bca17d}
+.below{width:min(100%,640px);text-align:center;padding:26px 8px 0;min-height:122px}
+.instruction{margin:0;color:#e3d0b4;font:italic 15px/1.5 Georgia,serif}
+.meta{display:flex;justify-content:center;align-items:center;gap:17px;margin-top:14px;color:#b8a083;font:10px/1.4 var(--mono);letter-spacing:.12em;text-transform:uppercase}
+.dot{width:3px;height:3px;border-radius:50%;background:#9c8061}
+button{border:0;background:none;color:inherit;cursor:pointer;font:inherit}
+.icon-button{display:inline-flex;align-items:center;justify-content:center;min-width:44px;min-height:44px;margin:-12px -9px;padding:8px;color:#ccb89a;border-radius:4px}
+.icon-button:hover{color:#fff4dc}.icon-button:focus-visible{outline:2px solid #e8d7b9;outline-offset:1px}
+.icon-button svg{width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.final{max-width:390px;margin:0 auto;color:#f2e3c9;font:italic 17px/1.55 Georgia,serif;animation:arrive .8s ease both}
+[hidden]{display:none!important}
+@keyframes arrive{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+@keyframes peel{0%{opacity:1;transform:translate(0,0) rotate(0) scale(1)}35%{opacity:1;transform:translate(5px,-7px) rotate(-2deg) scale(1.01)}100%{opacity:0;transform:translate(28px,-25px) rotate(-6deg) scale(.98)}}
+@media(max-width:600px){.scene{padding:24px 14px 36px}.topline{font-size:9px;margin-bottom:19px}.heading{font-size:10px;margin-bottom:18px}.heading::before,.heading::after{width:20px;margin:0 10px}.letter{padding:38px 26px 39px}.letter-head{margin-bottom:30px;font-size:9px}.letter-body{font-size:16px;line-height:1.7}.letter-body p{margin-bottom:13px}.letter-body .salutation{font-size:22px;margin-bottom:20px}.letter-body .closing{margin-top:18px;margin-bottom:0}.paper-footer{margin-top:28px}.below{padding-top:23px}}
+@media(max-width:340px){.letter{padding-left:20px;padding-right:20px}.letter-body{font-size:16px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important}}
+
+/* Quiet, comforting details for this separate letter. */
+.letter-head .seal { font-size:19px; color:#9d7958; }
+.letter { overflow:hidden; }
+.quiet-mark {
+  position:absolute; right:19px; bottom:14px; z-index:1;
+  color:rgba(139,96,55,.42); font:15px/1 Georgia,serif;
+  letter-spacing:5px; pointer-events:none;
+}
+.letter-body strong { color:#543b29; font-weight:normal; font-style:italic; }
+
+</style>
+</head>
+<body>
+<main class="scene" id="scene">
+  <div class="topline" aria-hidden="true"><span>A little note</span><span class="right">No. 003</span></div>
+  <h1 class="heading">A LETTER FOR RIDHI</h1>
+  <article class="letter" id="letter" aria-label="A letter for Ridhi">
+    <span class="quiet-mark" aria-hidden="true">✧  ·  ✧</span>
+    <div class="letter-head" aria-hidden="true"><span>For Ridhi</span><span class="seal">✧</span></div>
+    <div class="letter-body">
+      <p class="salutation"><strong>Hey Ridhi,</strong></p>
+      <p>I know things have been a little difficult lately, and maybe <span class="secret">there's a lot going on in your mind.</span></p>
+      <p><span class="secret">And it's okay to let yourself feel things. You don't have to be strong every single minute.</span> <span class="secret">Vedant ko toh kisi din saath mil kar peet denge</span></p>
+      <p><span class="secret">But jokes apart,</span> life doesn't always go according to plan, <span class="secret">and that's okay.</span></p>
+      <p>Sometimes things get messy, people disappoint us, and situations turn out nothing like we imagined. But that doesn't mean <span class="secret">you should let any of it change the way you see yourself.</span></p>
+      <p><span class="secret">You're one of the most mature people I have ever met.</span> <span class="secret">Tumhari kahaniyan toh apne bachchon ko sunaunga.</span></p>
+      <p>But seriously, never let someone else's actions make you question your worth.</p>
+      <p>You deserve <span class="secret">happiness, respect, and genuine effort</span> and <span class="secret">most importantly, peace of mind.</span></p>
+      <p>Please don't be too hard on yourself. <span class="secret">You don't have to figure everything out today.</span> End mein sab achha ho jaata hai, aur agar nahi hua, <span class="secret">toh who end nahi.</span> <span class="secret">picture abhi baaki hai…. XD</span></p>
+      <p>Take a deep breath, drink some water. Thoda khud ke liye bhi time nikalo. Do the things that make you happy and remember that your life has so many beautiful things beyond relationship problems.</p>
+      <p><span class="secret">I genuinely hope you find all the happiness you've been looking for.</span> And always remember <span class="secret">if you ask god to win you a marathon.</span> <span class="secret">He will give you shoes</span> <span class="secret">not the medal</span></p>
+      <p>So do whatever brings you joy. And whenever you feel like talking, or simply need someone to listen, <span class="secret">I'm just a text away.</span></p>
+    </div>
+    <div class="paper-footer" aria-hidden="true">A little note, just for you</div>
+    <div class="strip-layer" id="stripLayer" aria-hidden="true"></div>
+  </article>
+  <div class="below">
+    <p class="instruction" id="instruction">Take your time. Tap anywhere to uncover the next thought...</p>
+    <p class="final" id="final" hidden>That's all. Hope this little note brought a smile.</p>
+    <div class="meta">
+      <span id="progress" aria-live="polite">0 / 18 revealed</span><span class="dot" aria-hidden="true"></span>
+      <button class="icon-button" id="sound" type="button" aria-label="Mute paper sound" title="Mute paper sound"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path class="sound-waves" d="M16 9a4 4 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/><path class="sound-off" d="M16 9l5 6m0-6-5 6" hidden/></svg></button>
+      <button class="icon-button" id="restart" type="button" aria-label="Restart letter" title="Restart letter" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 11a8 8 0 1 1 2.3 6.1"/><path d="M4 5v6h6"/></svg></button>
+    </div>
+  </div>
+</main>
+<script>
+(() => {
+  const letter = document.getElementById('letter');
+  const layer = document.getElementById('stripLayer');
+  const secrets = [...document.querySelectorAll('.secret')];
+  const progress = document.getElementById('progress');
+  const instruction = document.getElementById('instruction');
+  const final = document.getElementById('final');
+  const restart = document.getElementById('restart');
+  const sound = document.getElementById('sound');
+  let revealed = 0, muted = false, audio;
+  const shades = ['#e3d0ad','#ead9b9','#dfcba9','#ebdbbd','#e3d1b1','#e9d7b6'];
+  function drawStrips() {
+    layer.replaceChildren();
+    const base = letter.getBoundingClientRect();
+    secrets.forEach((secret, index) => {
+      if (index < revealed) return;
+      for (const rect of secret.getClientRects()) {
+        if (!rect.width || !rect.height) continue;
+        const strip = document.createElement('span');
+        strip.className = 'strip';
+        strip.dataset.index = index;
+        strip.style.left = (rect.left - base.left - 3) + 'px';
+        strip.style.top = (rect.top - base.top - 1) + 'px';
+        strip.style.width = (rect.width + 3) + 'px';
+        strip.style.height = (rect.height + 2) + 'px';
+        strip.style.setProperty('--strip-color', shades[index % shades.length]);
+        layer.appendChild(strip);
+      }
+      secret.classList.add('ready');
+    });
+  }
+  function rustle() {
+    if (muted) return;
+    try {
+      const AudioContext = window.AudioContext || window.webkitAudioContext;
+      if (!AudioContext) return;
+      audio ||= new AudioContext();
+      if (audio.state === 'suspended') audio.resume();
+      const length = Math.floor(audio.sampleRate * .18);
+      const buffer = audio.createBuffer(1, length, audio.sampleRate);
+      const data = buffer.getChannelData(0);
+      for (let i = 0; i < length; i++) data[i] = (Math.random() * 2 - 1) * Math.pow(1-i/length, 2) * (0.4 + 0.6 * Math.random());
+      const source = audio.createBufferSource(), filter = audio.createBiquadFilter(), gain = audio.createGain();
+      source.buffer = buffer; filter.type = 'bandpass'; filter.frequency.value = 1600; filter.Q.value = .55; gain.gain.value = .055;
+      source.connect(filter); filter.connect(gain); gain.connect(audio.destination); source.start();
+    } catch (_) { /* The letter still works when audio is unavailable. */ }
+  }
+  function revealNext() {
+    if (revealed >= secrets.length) return;
+    const current = revealed++;
+    secrets[current].removeAttribute('aria-hidden');
+    layer.querySelectorAll('[data-index="' + current + '"]').forEach(strip => {
+      strip.classList.add('leaving');
+      strip.addEventListener('animationend', () => strip.remove(), {once:true});
+    });
+    rustle();
+    progress.textContent = `${revealed} / ${secrets.length} revealed`;
+    if (revealed === secrets.length) {
+      instruction.hidden = true; final.hidden = false; restart.hidden = false;
+    }
+  }
+  function reset() {
+    revealed = 0;
+    secrets.forEach(secret => secret.setAttribute('aria-hidden','true'));
+    instruction.hidden = false; final.hidden = true; restart.hidden = true;
+    progress.textContent = `0 / ${secrets.length} revealed`;
+    drawStrips();
+  }
+  secrets.forEach(secret => secret.setAttribute('aria-hidden','true'));
+  drawStrips();
+  document.addEventListener('click', e => { if (!e.target.closest('button')) revealNext(); });
+  document.addEventListener('keydown', e => {
+    if ((e.key === 'Enter' || e.key === ' ') && !e.target.closest('button')) { e.preventDefault(); revealNext(); }
+  });
+  sound.addEventListener('click', () => {
+    muted = !muted;
+    sound.setAttribute('aria-label', muted ? 'Unmute paper sound' : 'Mute paper sound');
+    sound.title = muted ? 'Unmute paper sound' : 'Mute paper sound';
+    sound.querySelector('.sound-waves').hidden = muted;
+    sound.querySelector('.sound-off').hidden = !muted;
+  });
+  restart.addEventListener('click', reset);
+  let resizeTimer;
+  window.addEventListener('resize', () => { clearTimeout(resizeTimer); resizeTimer = setTimeout(drawStrips, 80); });
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(drawStrips);
+})();
+</script>
+</body>
+</html>
